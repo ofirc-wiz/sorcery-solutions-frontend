@@ -37,7 +37,7 @@ spec:
               service:
                 name: {{ include "sorcery-solutions-frontend.fullname" $ }}
                 port:
-                  number: {{ $.Values.service.port }}
+                  number: {{ $.Values.service.externalPort }}
           {{- end }}
     {{- end }}
 {{- end }}
